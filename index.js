@@ -154,9 +154,7 @@ window.onload = function () {
         function resetTimer() {
             clearTimeout(timeout);
             timeout = setTimeout(() => {
-                var audio = document.getElementById('audio');
-                $(audio).attr("src","./yay.mp3");
-                audio.play();
+                
              $(".test").addClass("animate__animated animate__backOutRight").on("animationend",function(){
                 $(this).removeClass("animate__animated animate__backOutRight").addClass("hide");
                 $(".letters").removeClass("hide").addClass("animate__animated animate__jackInTheBox").on("animationend",function(){
